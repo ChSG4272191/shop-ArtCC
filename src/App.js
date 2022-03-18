@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import "./App.css";
+import "./style/global.css";
+import Home from "./pages/Home";
+import CreateAccount from "./pages/CreateAccount";
+import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
+import PasswordRecovery from "./pages/PasswordRecovery";
+import SendEmail from "./pages/SendEmail";
+import NewPassword from "./pages/NewPassword";
+import MyAccount from "./pages/MyAccount";
+import Checkout from "./pages/Checkout";
+import Orders from "./pages/Orders";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/password-recovery" element={<PasswordRecovery />} />
+      <Route exact path="/send-email" element={<SendEmail />} />
+      <Route exact path="/new-password" element={<NewPassword />} />
+      <Route exact path="/account" element={<MyAccount />} />
+      <Route exact path="/signup" element={<CreateAccount />} />
+      <Route exact path="/checkout" element={<Checkout />} />
+      <Route exact path="/orders" element={<Orders />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
-}
+};
 
 export default App;
