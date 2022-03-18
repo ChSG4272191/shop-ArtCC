@@ -1,8 +1,12 @@
 import React from 'react';
 import "../style/Login.css";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Login = () => {
     return (
+		<div>
+			<Header/>
         <div className="Login">
 			<div className="Login-container">
 				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -16,6 +20,8 @@ const Login = () => {
 				</form>
 				<button className="secondary-button signup-button">Registrarse</button>
 			</div>
+		</div>
+		<Footer/>
 		</div>
     );
 };

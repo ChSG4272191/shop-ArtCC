@@ -1,8 +1,12 @@
 import React from 'react';
 import "../style/PasswordRecovery.css";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const PasswordRecovery = () => {
     return (
+		<div>
+<Header/>
         <div className="PasswordRecovery">
 			<div className="PasswordRecovery-container">
 				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -14,6 +18,8 @@ const PasswordRecovery = () => {
 					<input type="submit" value="Confirmar" className="primary-button login-button" />
 				</form>
 			</div>
+		</div>
+		<Footer/>
 		</div>
     );
 };

@@ -1,8 +1,12 @@
 import React from 'react';
 import "../style/SendEmail.css";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const SendEmail = () => {
     return (
+		<div>
+<Header/>
         <div className="SendEmail">
 			<div className="form-container">
 				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -18,6 +22,8 @@ const SendEmail = () => {
 					<a href="/login">Reenviar</a>
 				</p>
 			</div>
+		</div>
+		<Footer/>
 		</div>
     );
 };

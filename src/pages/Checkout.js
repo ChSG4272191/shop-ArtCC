@@ -1,24 +1,31 @@
 import React from 'react';
 import OrderItem from '../components/OrderItem';
 import "../style/Checkout.css";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 //import Menu from '../components/Menu';
 
 const CheckOut = () => {
     return (
+		<div>
+		<Header/>
         <div className="Checkout">
 			<div className="Checkout-container">
-				<h1 className="title">My order</h1>
+				<h1 className="title">Mi orden:</h1>
 				<div className="Checkout-content">
 					<div className="order">
 						<p>
-							<span>03.25.21</span>
-							<span>6 articles</span>
+							<span>Marzo</span>
+							<span>6 unidades</span>
 						</p>
-						<p>$560.00</p>
+						<p>s/1.00</p>
 					</div>
 				</div>
 				<OrderItem />
 			</div>
+		</div>
+		<Footer/>
 		</div>
     );
 };
