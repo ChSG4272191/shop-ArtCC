@@ -7,7 +7,7 @@ const MyOrder = () => {
         <aside className="MyOrder">
 			<div className="title-container">
 				<img src="./icons/flechita.svg" alt="arrow" />
-				<p className="title">My order</p>
+				<p className="title">Mi orden</p>
 			</div>
 			<div className="my-order-content">
 				<OrderItem />
@@ -15,10 +15,10 @@ const MyOrder = () => {
 					<p>
 						<span>Total</span>
 					</p>
-					<p>$560.00</p>
+					<p>s/50</p>
 				</div>
 				<button className="primary-button">
-					Checkout
+					Verificar
 				</button>
 			</div>
 		</aside>
