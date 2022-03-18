@@ -1,11 +1,9 @@
 import React from 'react';
 import "../style/MyAccount.css";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const MyAccount = () => {
 	return (
-		<div><Header/>
+		<div>
         <div className="MyAccount">
 			<div className="MyAccount-container">
 				<h1 className="title">Mi cuenta</h1>
@@ -22,7 +20,6 @@ const MyAccount = () => {
 				</form>
 			</div>
 		</div>
-		<Footer/>
 		</div>
     );
 };

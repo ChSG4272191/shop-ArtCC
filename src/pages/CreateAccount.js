@@ -1,12 +1,10 @@
 import React from 'react';
 import "../style/CreateAccount.css";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 const CreateAccount = () => {
     return (
 		<div>
-		<Header/>
         <div className="CreateAccount">
 			<div className="CreateAccount-container">
 				<h1 className="title">Mi cuenta</h1>
@@ -23,7 +21,6 @@ const CreateAccount = () => {
 				</form>
 			</div>
 		</div>
-		<Footer/>
 		</div>
     );
 };

@@ -1,12 +1,9 @@
 import React from "react";
 import "../style/NewPassword.css";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const NewPassword = () => {
   return (
     <div>
-		<Header/>
     <div className="NewPassword">
       <div className="NewPassword-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -39,7 +36,6 @@ const NewPassword = () => {
         </form>
       </div>
     </div>
-    <Footer/>
     </div>
   );
 };

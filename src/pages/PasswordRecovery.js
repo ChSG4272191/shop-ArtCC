@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 const PasswordRecovery = () => {
     return (
 		<div>
-<Header/>
         <div className="PasswordRecovery">
 			<div className="PasswordRecovery-container">
 				<img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
@@ -19,7 +18,6 @@ const PasswordRecovery = () => {
 				</form>
 			</div>
 		</div>
-		<Footer/>
 		</div>
     );
 };

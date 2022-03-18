@@ -13,21 +13,25 @@ import NewPassword from "./pages/NewPassword";
 import MyAccount from "./pages/MyAccount";
 import Checkout from "./pages/Checkout";
 import Orders from "./pages/Orders";
+import Layout from "./containers/Layout";
 
 const App = () => {
   return (
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/login" element={<Login />} />
-      <Route exact path="/password-recovery" element={<PasswordRecovery />} />
-      <Route exact path="/send-email" element={<SendEmail />} />
-      <Route exact path="/new-password" element={<NewPassword />} />
-      <Route exact path="/account" element={<MyAccount />} />
-      <Route exact path="/signup" element={<CreateAccount />} />
-      <Route exact path="/checkout" element={<Checkout />} />
-      <Route exact path="/orders" element={<Orders />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    // <Header/>
+    <Layout>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/password-recovery" element={<PasswordRecovery />} />
+        <Route exact path="/send-email" element={<SendEmail />} />
+        <Route exact path="/new-password" element={<NewPassword />} />
+        <Route exact path="/account" element={<MyAccount />} />
+        <Route exact path="/signup" element={<CreateAccount />} />
+        <Route exact path="/checkout" element={<Checkout />} />
+        <Route exact path="/orders" element={<Orders />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Layout>
   );
 };
 

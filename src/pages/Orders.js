@@ -1,13 +1,10 @@
 import React from 'react';
 import OrderItem from '../components/OrderItem';
 import "../style/Orders.css";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Orders = () => {
     return (
 		<div>
-			<Header/>
         <div className="Orders">
 			<div className="Orders-container">
 				<h1 className="title">Mis ordenes</h1>
@@ -16,7 +13,6 @@ const Orders = () => {
 				</div>
 			</div>
 		</div>
-		<Footer/>
 		</div>
     );
 };
